@@ -1,0 +1,20 @@
+{
+  "name": "pub-parse-opencitations",
+  "version": "0.1.0",
+  "description": "Parsing paper detials from opencitations via crossref",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/schatzopoulos/pub-parse-opencitations"
+  },
+  "bugs": "https://github.com/schatzopoulos/pub-parse-opencitations/issues",
+  "author": "Serafeim Chatzopoulos",
+  "main": "server.js",
+  "dependencies": {
+    "n-readlines": "^1.0.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "engines": {
+    "node": ">=6.11.0"
+  }
+}
