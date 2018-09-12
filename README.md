@@ -11,4 +11,7 @@ Utils that help parsing the opecitations citation links and get full paper detai
     ```
      cat data.csv | awk -F',' 'FNR > 1 {gsub(/"/, "", $2);gsub(/"/, "", $3);print $2"\n"$3}' | sort -T [dir/for/tmp/files] | uniq > [unique/DOIs/file]
     ```
- 3. 
+ 3. Run the script to get paper details
+    ```
+    node getCrossrefWorks.js [input/file/with/DOIs] [output/file] [email] > [errored_dois.csv]
+    ```
