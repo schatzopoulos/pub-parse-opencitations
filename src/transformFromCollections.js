@@ -62,7 +62,7 @@ function transform(doc, source) {
 			title: (doc.title[0] || ''),
 			venue: (doc['container-title'][0] || ''),
 			year: (doc['published-print']) ? (doc['published-print']['date-parts'][0][0] || '') : '',
-			authors: (doc.authors || []).map( (a) => {
+			authors: (doc.author || []).map( (a) => {
 				return {
 					name: a.given + ' ' + a.family, 
 					org: a.affiliation,
