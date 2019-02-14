@@ -10,7 +10,7 @@ Useful utils for the data management of open citations
 2. Get unique DOIs from file & parse quotes
 
     ```
-     cat data.csv | awk -F',' 'FNR > 1 {gsub(/"/, "", $2);gsub(/"/, "", $3);print $2"\n"$3}' | sort -u -T [dir/for/tmp/files] > [unique/DOIs/file]
+     cat data.csv | grep -F "10." | awk -F',' 'FNR > 1 {gsub(/"/, "", $2);gsub(/"/, "", $3);print $2"\n"$3}' | sort -u -T [dir/for/tmp/files] > [unique/DOIs/file]
     ```
  3. Run the script to get paper details
     ```
